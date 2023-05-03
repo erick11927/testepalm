@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 
 <head>
@@ -9,7 +9,7 @@
 body {
 			margin: 0;
 			padding: 0;
-			background-image: url(palmerix.2.jpg);
+			background-image: url(palmerix.png);
 			background-size: cover;
 			background-position: center;
 			background-attachment: fixed;
@@ -81,10 +81,54 @@ body {
       cursor: pointer;
     }
     
-   
+    /* Estilos para telas menores que 768px */
+    @media (max-width: 768px) (max-heigt) {
+      #circle {
+        width: 50px;
+        height: 50px;
+      }
+      
+      p {
+        font-size: 14px;
+      }
+
+      button {
+        font-size: 14px;
+        padding: 5px 10px;
+      }
+    }
+
+    /* Estilos para telas entre 768px e 1024px */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      #circle {
+        width: 75px;
+        height: 75px;
+      }
+      
+      p {
+        font-size: 16px;
+      }
+
+      button {
+        font-size: 16px;
+        padding: 8px 12px;
+      }
+    }
+
+    /* Estilos para telas maiores que 1024px */
+    @media (min-width: 1024px) {
+      #circle {
+        width: 100px;
+        height: 100px;
+      }
+      
+      p {
+        font-size: 18px;
+      }
+
       @media (max-width: 767px) { /* smartphones em modo retrato */
   #circle {
-    width: 100%;
+    width: 50%;
     height: 50%;
   }
 }
@@ -103,6 +147,8 @@ body {
   }
 }
 
+
+    }
   </style>
 </head>
 
